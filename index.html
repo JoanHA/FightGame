@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <div style="position: relative" class="big-container">
+      <div class="small-container">
+        <!-- Player health -->
+        <div
+          style="display: flex; justify-content: flex-end"
+          class="health-bar"
+        >
+          <div class="player-health-bar"></div>
+          <div id="playerHealth" class="player-damage"></div>
+        </div>
+        <!-- Timer -->
+
+        <div class="timer" id="timer">
+            10
+        </div>
+        <!-- Enemy health -->
+        <div style="position: relative" class="health-bar">
+          <div class="enemy-health-bar"></div>
+          <div class="enemy-damage" id="enemyHealth"></div>
+        </div>
+      </div>
+      <div id="winnerSessage">
+        Tie
+      </div>
+      <canvas></canvas>
+    </div>
+    <script src="lib/utlis.js"></script>
+    <script src="class/classes.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
